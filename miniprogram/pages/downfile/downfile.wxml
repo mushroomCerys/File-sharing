@@ -1,0 +1,57 @@
+<!--pages/downfile/downfile.wxml-->
+<wxs module="common" src="../../utils/common.wxs"></wxs>
+
+<view class="user-info">
+	<view class="school">{{fileInfo.userSchool}}</view>
+	<view class="faculty">{{fileInfo.userFaculty}}</view>
+</view>
+
+<view class="file-detail" bindtap="openfile">
+	<view class="img-container" wx:if="{{fileInfo.fileSuffix =='.xls'||fileInfo.fileSuffix =='.xlsx'}}">
+		<image src="/images/exl.png" class="file-icon"></image>
+	</view>
+	<view class="img-container" wx:elif="{{fileInfo.fileSuffix =='.doc'||fileInfo.fileSuffix =='.docx'}}">
+		<image src="/images/doc.png" class="file-icon"></image>
+	</view>
+	<view class="img-container" wx:elif="{{fileInfo.fileSuffix =='.ppt'||fileInfo.fileSuffix =='.pptx'}}">
+		<image src="/images/ppt.png" class="file-icon"></image>
+	</view>
+	<view class="img-container" wx:elif="{{fileInfo.fileSuffix =='.rar'||fileInfo.fileSuffix =='.zip'}}">
+		<image src="/images/rar.png" class="file-icon"></image>
+	</view>
+	<view class="img-container" wx:elif="{{fileInfo.fileSuffix =='.pdf'}}">
+		<image src="/images/pdf.png" class="file-icon"></image>
+	</view>
+	<view class="img-container" wx:else>
+		<image src="/images/weizhi.png" class="file-icon"></image>
+	</view>
+
+	<view class="namesize">
+		<view class="name">{{fileInfo.fileName}}</view>
+		<view class="size">{{fileInfo.fileSize}} KB</view>
+
+	</view>
+</view>
+
+<view class="file-add">
+	<view class="time">{{common.TimeToDate(fileInfo.fileTime,'YYYY-MM-DD')}}</view>
+	<view class="useful">有用 {{fileInfo.good}}</view>
+	<view class="download">下载 {{fileInfo.downLoad}}</view>
+</view>
+
+<view hidden="{{isMy}}">
+	<button class="good-btn" bindtap="good" hidden="{{hidden}}">有帮助到我！</button>
+	<button class="good-btn red" bindtap="noGood" hidden="{{!hidden}}">没有用！</button>
+</view>
+
+<view class="file-info">
+	<view class="title">文件信息</view>
+	<view class="all">
+		<view class="zuozhe">作者：{{fileInfo.author}}</view>
+		<view>备注：{{fileInfo.need}} {{fileInfo.remark}}</view>
+	</view>
+</view>
+
+<button class="down" bindtap="savefile">下载
+	<text class="tishi">（复制链接，打开浏览器并粘贴）</text>
+</button>

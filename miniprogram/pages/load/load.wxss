@@ -1,0 +1,27 @@
+/* pages/load/load.wxss */
+.btn-container{
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 300rpx;
+  margin-top: 350rpx;
+}
+
+.btn{
+  background-color: #A3D2CA;
+  width: 70%;
+}
+
+.divider{
+  color: #7F7F7F;
+  text-align: center;
+}
+
+.text{
+  color: #7F7F7F;
+  font-size: 28rpx;
+  font-weight: 10rpx;
+  width: 89%;
+  margin-top: 15rpx;
+  margin: auto;
+}

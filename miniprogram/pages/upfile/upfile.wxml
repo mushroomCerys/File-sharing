@@ -1,0 +1,102 @@
+<!--pages/upfile/upfile.wxml-->
+
+<view class="file">
+	<view class="title">文件信息</view>
+	<radio-group class="options">
+		<radio class="opt" bindtap="clickOne" checked="{{checked}}">课程相关（试卷、复习资料、电子书籍等）</radio>
+		<radio class="opt" bindtap="clickTwo" checked="{{checked}}">其他（考研、考公、考证等）</radio>
+	</radio-group>
+
+	<!--课程相关-->
+	<view hidden="{{hiddenOne}}" class="file-info">
+		<form bindsubmit="onSubmit">
+			<text>课程名</text>
+			<input placeholder="选填" class="file-input" name="need" value="{{input}}"></input>
+			<text>作者</text>
+			<input placeholder="选填" class="file-input" name="author" value="{{input}}"></input>
+			<text class="remind">转载请标明作者信息（如教师授课PPT，电子书籍等）</text>
+			<text>备注</text>
+			<input placeholder="选填" class="file-input" name="remark" value="{{input}}"></input>
+
+			<view class="upFile" bindtap="selectFile" hidden="{{!fileHidden}}">
+				<view class="uptext" bindtap="authorize">文件上传</view>
+			</view>
+			<view hidden="{{fileHidden}}" class="upFile">
+				<view class=" file-detail">
+					<view class="img-container" wx:if="{{fileSuffix =='.xls'||fileSuffix =='.xlsx'}}">
+						<image src="/images/exl.png" class="file-icon"></image>
+					</view>
+					<view class="img-container" wx:elif="{{fileSuffix =='.doc'||fileSuffix =='.docx'}}">
+						<image src="/images/doc.png" class="file-icon"></image>
+					</view>
+					<view class="img-container" wx:elif="{{fileSuffix =='.ppt'||fileSuffix =='.pptx'}}">
+						<image src="/images/ppt.png" class="file-icon"></image>
+					</view>
+					<view class="img-container" wx:elif="{{fileSuffix =='.rar'||fileSuffix =='.zip'}}">
+						<image src="/images/rar.png" class="file-icon"></image>
+					</view>
+					<view class="img-container" wx:elif="{{fileSuffix =='.pdf'}}">
+						<image src="/images/pdf.png" class="file-icon"></image>
+					</view>
+					<view class="img-container" wx:else>
+						<image src="/images/weizhi.png" class="file-icon"></image>
+					</view>
+					<view class="namesize">
+						<view class="name">{{fileName}}</view>
+						<view class="size">{{fileSize}} KB</view>
+					</view>
+				</view>
+			</view>
+
+			<button class="success-btn" form-type="submit">完成</button>
+
+		</form>
+	</view>
+
+	<!--其他-->
+	<view class="file-info" hidden="{{hiddenTwo}}">
+		<form bindsubmit="onSubmit">
+			<text>文件概述</text>
+			<input placeholder="选填" class="file-input" name="need" value="{{input}}"></input>
+			<text>作者</text>
+			<input placeholder="选填" class="file-input" name="author" value="{{input}}"></input>
+			<text class="remind">转载请标明作者信息（如文献等）</text>
+			<text>备注</text>
+			<input placeholder="选填" class="file-input" name="remark" value="{{input}}"></input>
+
+			<view class="upFile" bindtap="selectFile" hidden="{{!fileHidden}}">
+				<view class="uptext">文件上传</view>
+			</view>
+			<view hidden="{{fileHidden}}" class="upFile">
+				<view class=" file-detail">
+					<view class="img-container" wx:if="{{fileSuffix =='.xls'||fileSuffix =='.xlsx'}}">
+						<image src="/images/exl.png" class="file-icon"></image>
+					</view>
+					<view class="img-container" wx:elif="{{fileSuffix =='.doc'||fileSuffix =='.docx'}}">
+						<image src="/images/doc.png" class="file-icon"></image>
+					</view>
+					<view class="img-container" wx:elif="{{fileSuffix =='.ppt'||fileSuffix =='.pptx'}}">
+						<image src="/images/ppt.png" class="file-icon"></image>
+					</view>
+					<view class="img-container" wx:elif="{{fileSuffix =='.rar'||fileSuffix =='.zip'}}">
+						<image src="/images/rar.png" class="file-icon"></image>
+					</view>
+					<view class="img-container" wx:elif="{{fileSuffix =='.pdf'}}">
+						<image src="/images/pdf.png" class="file-icon"></image>
+					</view>
+					<view class="img-container" wx:else>
+						<image src="/images/weizhi.png" class="file-icon"></image>
+					</view>
+					<view class="namesize">
+						<view class="name">{{fileName}}</view>
+						<view class="size">{{fileSize}} KB</view>
+					</view>
+				</view>
+			</view>
+
+			<button class="success-btn" form-type="submit">完成</button>
+
+		</form>
+	</view>
+
+</view>

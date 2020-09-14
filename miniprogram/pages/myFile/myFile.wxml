@@ -1,0 +1,51 @@
+<!--pages/myFile/myFile.wxml-->
+<wxs module="common" src="../../utils/common.wxs"></wxs>
+
+<view class="search">
+	<view class="enter"><input placeholder="请输入搜索内容" bindinput="input" bindconfirm='search'></input></view>
+	<view class="search-icon">
+		<image src="/images/search.png" catchtap="search"></image>
+	</view>
+</view>
+
+<view class="filter">
+	<view class="total">共 {{total}} 项</view>
+</view>
+
+<block wx:for="{{fileCollection}}">
+	<navigator url="../downfile/downfile?id={{item._id}}">
+		<view class="file-detail">
+
+			<view class="img-container" wx:if="{{item.fileSuffix =='.xls'||item.fileSuffix =='.xlsx'}}">
+				<image src="/images/exl.png" class="file-icon"></image>
+			</view>
+			<view class="img-container" wx:elif="{{item.fileSuffix =='.doc'||item.fileSuffix =='.docx'}}">
+				<image src="/images/doc.png" class="file-icon"></image>
+			</view>
+			<view class="img-container" wx:elif="{{item.fileSuffix =='.ppt'||item.fileSuffix =='.pptx'}}">
+				<image src="/images/ppt.png" class="file-icon"></image>
+			</view>
+			<view class="img-container" wx:elif="{{item.fileSuffix =='.rar'||item.fileSuffix =='.zip'}}">
+				<image src="/images/rar.png" class="file-icon"></image>
+			</view>
+			<view class="img-container" wx:elif="{{item.fileSuffix =='.pdf'}}">
+				<image src="/images/pdf.png" class="file-icon"></image>
+			</view>
+			<view class="img-container" wx:else>
+				<image src="/images/weizhi.png" class="file-icon"></image>
+			</view>
+
+			<view class="namesize">
+				<view class="name">{{item.fileName}}</view>
+				<view class="size">{{item.fileSize}} KB</view>
+			</view>
+		</view>
+
+		<view class="file-add">
+			<view class="time">{{common.TimeToDate(item.fileTime,'YYYY-MM-DD')}}</view>
+			<view class="useful">有用 {{item.good}}</view>
+			<view class="download">下载 {{item.downLoad}}</view>
+		</view>
+	</navigator>
+
+</block>

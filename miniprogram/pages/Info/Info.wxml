@@ -1,0 +1,8 @@
+<!--pages/Info/Info.wxml-->
+<view class="title">用户信息</view>
+<form bindsubmit="onSubmit" class="info">
+  <view class="tip">提示：学校和学院请填写全称，用于筛选</view>
+	<input placeholder="学校名称" class="enter" name="school"></input>
+	<input placeholder="学院名称" class="enter" name="faculty"></input>
+	<button form-type="submit" class="success-btn">提交</button>
+</form>

@@ -1,0 +1,62 @@
+{
+  "pages": [
+    "pages/main/main",
+    "pages/load/load",
+    "pages/Info/Info",
+    
+    "pages/ask/ask",
+    "pages/search/search",
+    "pages/upfile/upfile",
+    "pages/downfile/downfile",
+    "pages/mine/mine",
+    "pages/myFile/myFile",
+    "pages/answer/answer",
+    "pages/qesUpfile/qesUpfile",
+    "pages/myQes/myQes"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#5EAAA8",
+    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "white",
+    "color": "#CDCDCD",
+    "selectedColor": "#39458F",
+    "list": [
+      {
+        "pagePath": "pages/main/main",
+        "text": "问答",
+        "iconPath": "images/wenda-gray.png",
+        "selectedIconPath": "images/wenda.png"
+      },
+      {
+        "pagePath": "pages/ask/ask",
+        "text": "提问",
+        "iconPath": "images/tiwen-gray.png",
+        "selectedIconPath": "images/tiwen.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "images/sousuo-gray.png",
+        "selectedIconPath": "images/sousuo.png"
+      },
+      {
+        "pagePath": "pages/upfile/upfile",
+        "text": "上传",
+        "iconPath": "images/shangchuan-gray.png",
+        "selectedIconPath": "images/shangchuan.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "images/wode-gray.png",
+        "selectedIconPath": "images/wode.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

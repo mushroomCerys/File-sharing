@@ -1,0 +1,54 @@
+/* pages/Info/Info.wxss */
+.title {
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+  background-color:#A3D2CA;
+  height: 100rpx;
+  font-size: 40rpx;
+  /*实现容器内的文字居中*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 40rpx;
+  border-top-right-radius: 40rpx;
+}
+
+.info{
+  margin: auto;
+  background-color: white;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding-top: 40rpx;
+  border-bottom-left-radius: 40rpx;
+  border-bottom-right-radius: 40rpx;
+}
+
+.tip{
+  width: 90%;
+  margin: auto;
+  margin-bottom: 20rpx;
+  color: #EC808D;
+  font-size: 28rpx;
+}
+
+.enter{
+  width: 90%;
+  height: 90rpx;
+  margin: auto;
+  margin-bottom: 20rpx;
+  font-size: 40rpx;
+  padding-left: 15rpx;
+  border: 2px solid #dfdfdf;
+  border-radius: 15rpx;
+}
+
+.success-btn{
+  background-color: #A3D2CA;
+  margin-top: 40rpx;
+  height: 100rpx;
+  border-radius: 0rpx;
+  font-size: 40rpx;
+  border-bottom-left-radius: 40rpx;
+  border-bottom-right-radius: 40rpx;
+}

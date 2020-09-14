@@ -1,0 +1,181 @@
+/* pages/mine/mine.wxss */
+.user-info {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 180rpx;
+}
+
+.info-one {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.pic {
+  margin-top: 15rpx;
+  margin-left: 12rpx;
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+
+.name {
+  font-size: 30rpx;
+  margin: auto;
+  margin-left: 15rpx;
+  /*超出容器用省略号*/
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.info-two {
+  font-size: 30rpx;
+  width: 50%;
+  height: 100%;
+  padding-left: 50rpx;
+  padding-top: 30rpx;
+  padding-right: 12rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.icon {
+  margin-right: 10rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.school {
+  margin-bottom: 10rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.text {
+  width: 250rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mine {
+  padding-left: 20rpx;
+  border-radius: 15rpx;
+  margin-top: 30rpx;
+  background-color: white;
+  
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.title {
+  margin-right: 540rpx;
+  font-size: 30rpx;
+}
+
+.img-container{
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.jiantou {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.unique{
+  margin-top: 3rpx;
+}
+
+/*蒙版*/
+.mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  z-index: 9000;
+  opacity: 0.7;/*透明度*/
+ }
+
+ .modalDlg {
+  width: 580rpx;
+  height: 450rpx;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 9999;
+  margin: -370rpx 85rpx;
+  background-color: #fff;
+  border-radius: 36rpx;
+ }
+
+ .ch-title{
+   background-color: #A3D2CA;
+   width: 100%;
+   height: 80rpx;
+   font-size: 36rpx;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   border-top-right-radius: 36rpx;
+   border-top-left-radius: 36rpx;
+ }
+
+ .ch-info{
+   width: 90%;
+   height: 260rpx;
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+
+ .ch-input{
+   background-color: white;
+   width: 90%;
+   height: 80rpx;
+   font-size: 35rpx;
+   padding-left: 15rpx;
+   margin-top: 30rpx;
+   border: 1rpx solid #D7D7D7;
+   border-radius: 10rpx;
+ }
+
+ .ch-btn{
+   width: 90%;
+   height: 110rpx;
+   margin: auto;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+ }
+
+ .same{
+  width: 47%;
+  height: 80rpx; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 37rpx;
+ }
+
+ .ok{
+  background-color: #EC808D;
+  border-top-left-radius: 10rpx;
+  border-bottom-left-radius: 10rpx;
+ }
+
+ .cancel{
+   background-color: #6DB4D3;
+   border-top-right-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+ }

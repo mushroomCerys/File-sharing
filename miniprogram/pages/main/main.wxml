@@ -1,0 +1,44 @@
+<!--pages/main/main.wxml-->
+<wxs module="common" src="../../utils/common.wxs"></wxs>
+
+<view class="search">
+	<view class="enter"><input placeholder="请输入搜索内容" bindinput="input" bindconfirm='search'></input></view>
+	<view class="search-icon">
+		<image src="/images/search.png" catchtap="search"></image>
+	</view>
+</view>
+
+<view class="filter">
+	<view class="manage {{filterVal==null?'hover':''}}" bindtap="all">全部</view>
+	<view class="manage {{filterVal==1?'hover':''}}" bindtap="mySchool">本学校</view>
+	<view class="manage {{filterVal==2?'hover':''}}" bindtap="myFaculty">本学院</view>
+	<view class="manage {{filterVal==3?'hover':''}}" bindtap="solved">已解决</view>
+	<view class="manage {{filterVal==4?'hover':''}}" bindtap="unSolved">未解决</view>
+	<view class="total">共 {{total}} 项</view>
+</view>
+
+<block wx:for="{{fileCollection}}" >
+	<navigator url="../answer/answer?id={{item._id}}">
+		<view class="title">
+			<view wx:if="{{item.fileId.length==0}}">
+			<image src="/images/wenhao.png"></image>
+		</view>
+		<view wx:else>
+			<image src="/images/dagou.png"></image>
+		</view>
+			<view class="school">{{item.userSchool}}</view>
+			<view class="faculty">{{item.userFaculty}}</view>
+		</view>
+
+		<view class="details">
+			<text class="txt">{{item.details}}</text>
+		</view>
+
+		<view class="file-add">
+			<view class="time">{{common.TimeToDate(item.qesTime,'YYYY-MM-DD')}}</view>
+			<view class="useful">回答 {{item.fileId.length}}</view>
+			<view class="download">关注 {{item.follow}}</view>
+		</view>
+	</navigator>
+
+</block>

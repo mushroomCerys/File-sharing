@@ -1,0 +1,79 @@
+<!--pages/answer/answer.wxml-->
+<wxs module="common" src="../../utils/common.wxs"></wxs>
+
+<scoll-view class="file-display {{isMy?'file-display-change':''}}">
+	<view class="title">
+		<view wx:if="{{qesInfo.fileId.length==0}}">
+			<image src="/images/wenhao.png"></image>
+		</view>
+		<view wx:else>
+			<image src="/images/dagou.png"></image>
+		</view>
+		<view class="school">{{qesInfo.userSchool}}</view>
+		<view class="faculty">{{qesInfo.userFaculty}}</view>
+
+		<view hidden="{{isMy}}">
+			<image src="/images/guanzhu-gray.png" hidden="{{hidden}}" bindtap="follow"></image>
+			<image src="/images/guanzhu.png" hidden="{{!hidden}}" bindtap="nofollow"></image>
+		</view>
+
+
+	</view>
+
+	<view class="details">
+		<text class="txt">{{qesInfo.details}}</text>
+	</view>
+
+	<view class="file-add">
+		<view class="time">{{common.TimeToDate(qesInfo.qesTime,'YYYY-MM-DD')}}</view>
+		<view class="guanzhu">关注 {{qesInfo.follow}}</view>
+	</view>
+
+	<view class="huida">回答 {{qesInfo.fileId.length}}</view>
+	<block wx:for="{{fileCollection}}">
+		<navigator url="../downfile/downfile?id={{item._id}}">
+			<view class="user-info">
+				<view class="school">{{item.userSchool}}</view>
+				<view class="faculty">{{item.userFaculty}}</view>
+			</view>
+
+			<view class="file-detail">
+
+				<view class="img-container" wx:if="{{item.fileSuffix =='.xls'||item.fileSuffix =='.xlsx'}}">
+					<image src="/images/exl.png" class="file-icon"></image>
+				</view>
+				<view class="img-container" wx:elif="{{item.fileSuffix =='.doc'||item.fileSuffix =='.docx'}}">
+					<image src="/images/doc.png" class="file-icon"></image>
+				</view>
+				<view class="img-container" wx:elif="{{item.fileSuffix =='.ppt'||item.fileSuffix =='.pptx'}}">
+					<image src="/images/ppt.png" class="file-icon"></image>
+				</view>
+				<view class="img-container" wx:elif="{{item.fileSuffix =='.rar'||item.fileSuffix =='.zip'}}">
+					<image src="/images/rar.png" class="file-icon"></image>
+				</view>
+				<view class="img-container" wx:elif="{{item.fileSuffix =='.pdf'}}">
+					<image src="/images/pdf.png" class="file-icon"></image>
+				</view>
+				<view class="img-container" wx:else>
+					<image src="/images/weizhi.png" class="file-icon"></image>
+				</view>
+
+				<view class="namesize">
+					<view class="name">{{item.fileName}}</view>
+					<view class="size">{{item.fileSize}} KB</view>
+				</view>
+			</view>
+
+			<view class="file-add">
+				<view class="time">{{common.TimeToDate(item.fileTime,'YYYY-MM-DD')}}</view>
+				<view class="useful">有用 {{item.good}}</view>
+				<view class="download">下载 {{item.downLoad}}</view>
+			</view>
+		</navigator>
+	</block>
+
+</scoll-view>
+
+<navigator url="../qesUpfile/qesUpfile?id={{qesInfo._id}}" hidden="{{isMy}}">
+	<button class="down">我要回答</button>
+</navigator>

@@ -1,0 +1,58 @@
+<!--pages/mine/mine.wxml-->
+
+<view class="user-info" bindtap="authorize">
+	<view class="info-one">
+		<view hidden="{{info_hidden}}">
+			<image src="{{userImg}}" class="pic"></image>
+		</view>
+
+		<view hidden="{{!info_hidden}}">
+			<image src="/images/user-unlogin.png" class="pic"></image>
+		</view>
+
+		<view class="name">{{userName}}</view>
+	</view>
+	<view class="info-two" bindtap="change" hidden="{{info_hidden}}">
+		<view class="school">
+			<view hidden="{{info_hidden}}">
+				<image src="/images/xuexiao.png" class="icon"></image>
+			</view>
+			<view class="text">{{userSchool}}</view>
+		</view>
+		<view class="school">
+			<view hidden="{{info_hidden}}">
+				<image src="/images/xueyuan.png" class="icon"></image>
+			</view>
+			<view class="text">{{userFaculty}}</view>
+		</view>
+	</view>
+</view>
+
+<navigator class="mine" url="../myFile/myFile" hidden="{{info_hidden}}">
+	<view class="title">我的资源</view>
+	<view class="img-container">
+		<image src="/images/jiantou.png" class="jiantou"></image>
+	</view>
+</navigator>
+
+
+<navigator class="mine unique" url="../myQes/myQes" hidden="{{info_hidden}}">
+	<view class="title">我的问题</view>
+	<view class="img-container">
+		<image src="/images/jiantou.png" class="jiantou"></image>
+	</view>
+</navigator>
+
+
+<view wx:if="{{showModal}}" class="modalDlg">
+	<view class="ch-title">更改信息</view>
+	<view class="ch-info">
+		<input placeholder="学校名称" class="ch-input" bindinput="school"></input>
+		<input placeholder="学院名称" class="ch-input" bindinput="faculty"></input>
+	</view>
+	<view class="ch-btn">
+		<view class="ok same" bindtap="infoSubmit">确定</view>
+		<view bindtap="close" class="cancel same">取消</view>
+	</view>
+</view>
+<view catchtouchmove="preventTouchMove" wx:if="{{showModal}}" class="mask"></view>

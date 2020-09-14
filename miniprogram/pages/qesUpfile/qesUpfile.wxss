@@ -1,0 +1,132 @@
+/* pages/qesUpfile/qesUpfile.wxss */
+
+.title {
+  margin-left: -10rpx;
+  margin-right: -10rpx;
+  background-color: #A3D2CA;
+  height: 100rpx;
+  font-size: 40rpx;
+  /*实现容器内的文字居中*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 40rpx;
+  border-top-right-radius: 40rpx;
+}
+
+.file {
+  background-color: white;
+  margin-top: 3%;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  border-radius: 40rpx;
+  box-shadow: 5rpx 5rpx 20rpx  rgba(85, 85, 85, 0.10);
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-bottom: 20rpx;
+}
+
+.opt {
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+
+radio .wx-radio-input.wx-radio-input-checked{
+  border-color:#39458F;
+  background-color: #39458F;
+}
+
+.file-info{
+  font-size: 28rpx;
+  margin-top: 20rpx;
+}
+
+.file-input{
+  margin-top: 10rpx;
+  margin-bottom: 30rpx;
+  border: 1px solid #D7D7D7;
+  border-radius: 8rpx;
+  padding-left: 10rpx;
+  height: 60rpx;
+}
+
+.remind{
+  display: block;
+  margin-top: -20rpx;
+  margin-bottom: 20rpx;
+  font-size: 25rpx;
+  color: #797979;
+  margin-left: 10rpx;
+}
+
+.upFile{
+  background-color:#F2F2F2 ;
+  border: 1rpx solid #D7D7D7;
+  color: #7F7F7F;
+  height: 180rpx;
+  margin-top: 40rpx;
+  margin-bottom: 40rpx;
+  border-radius: 8rpx;
+}
+
+.uptext{
+  font-size: 60rpx;
+  margin-left: 240rpx;
+  margin-top: 45rpx;
+}
+
+.success-btn{
+  margin-left: -10rpx;
+  margin-right: -10rpx;
+  background-color: #A3D2CA;
+  height: 100rpx;
+  border-radius: 0rpx;
+  font-size: 40rpx;
+  border-bottom-left-radius: 40rpx;
+  border-bottom-right-radius: 40rpx;
+}
+
+.file-detail {
+  width: 100%;
+  height: 180rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.img-container {
+  height: 180rpx;
+  width: 180rpx;
+}
+
+.file-icon {
+  height: 180rpx;
+  width: 180rpx;
+}
+
+.namesize {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20rpx;
+}
+
+.name {
+  width: 520rpx;
+  font-size: 38rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.size {
+  width: 200rpx;
+  color: #AAAAAA;
+  margin-top: 10rpx;
+  margin-left: 10rpx;
+  font-size: 25rpx;
+}

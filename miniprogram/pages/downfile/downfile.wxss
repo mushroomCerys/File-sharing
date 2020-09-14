@@ -1,0 +1,171 @@
+/* pages/downfile/downfile.wxss */
+.user-info{
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60rpx;
+  color: #555555;
+  font-size: 28rpx;
+}
+
+.school{
+  width: 40%;
+  text-align: right;
+  margin-right: 20rpx;
+  /*超出容器用省略号*/
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.faculty{
+  width: 40%;
+  text-align: left;
+  /*超出容器用省略号*/
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.file-detail {
+  background-color: white;
+  width: 100%;
+  height: 180rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.img-container {
+  height: 180rpx;
+  width: 180rpx;
+}
+
+.file-icon {
+  height: 180rpx;
+  width: 180rpx;
+}
+
+.namesize {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20rpx;
+}
+
+.name {
+  width: 560rpx;
+  font-size: 38rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.size {
+  width: 200rpx;
+  color: #AAAAAA;
+  margin-top: 10rpx;
+  margin-left: 10rpx;
+  font-size: 25rpx;
+}
+
+.file-add {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  color: #AAAAAA;
+  font-size: 25rpx;
+  margin-bottom: 20rpx;
+  height: 40rpx
+}
+
+.time {
+  margin-left: 35rpx;
+  width: 150rpx;
+}
+
+.useful {
+  width: 150rpx;
+  text-align: right;
+  margin-left: 270rpx;
+}
+
+.download {
+  width: 150rpx;
+  text-align: left;
+  margin-left: 20rpx;
+}
+
+.file-info{
+  height: 500rpx;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10rpx;
+  margin-left: 2%;
+  margin-right: 2%;
+  border-radius: 40rpx;
+  box-shadow: 5rpx 5rpx 20rpx  rgba(85, 85, 85, 0.10);
+}
+
+.title {
+  background-color: #A3D2CA;
+  height: 100rpx;
+  font-size: 40rpx;
+  /*实现容器内的文字居中*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 40rpx;
+  border-top-right-radius: 40rpx;
+}
+
+.all{
+  height: 300rpx;
+  width: 90%;
+  margin: auto;
+  margin-top: 50rpx;
+  display: flex;
+  flex-direction: column;
+  color: #555555;
+  word-break: break-all;
+}
+
+.zuozhe{
+  margin-bottom: 20rpx;
+}
+
+.down{
+  width: 100%;
+  height: 120rpx;
+  background-color: #A3D2CA;
+  position: fixed;
+  bottom: 0px;
+  border-radius: 0rpx;
+  font-size: 44rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.tishi{
+  font-size: 28rpx;
+  color:grey;
+}
+
+.good-btn{
+  background-color: #6DB4D3;
+  margin-top: 20rpx;
+  margin-bottom: 30rpx;
+  border-radius:50rpx;
+  width: 300rpx;
+  box-shadow: 5rpx 5rpx 20rpx  rgba(85, 85, 85, 0.10);
+  text-align: center;
+  font-size: 35rpx;
+}
+
+.red{
+  background-color: #EC808D;
+}

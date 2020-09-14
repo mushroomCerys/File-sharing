@@ -1,0 +1,159 @@
+/* pages/search/search.wxss */
+.hover{
+  color: #000080;
+}
+
+.search {
+  background-color: white;
+  width: 80%;
+  margin: auto;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1rpx solid #D7D7D7;
+  border-radius: 10rpx;
+  margin-top: 20rpx;
+  padding-left: 20rpx;
+}
+
+.enter {
+  width: 520rpx;
+}
+
+image {
+  width: 45rpx;
+  height: 45rpx;
+}
+
+.search-icon {
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 20rpx;
+}
+
+.filter {
+  background-color: #A3D2CA;
+  border: 1rpx solid #D7D7D7;
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 30rpx;
+}
+
+.manage {
+  margin-left: 30rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 28rpx;
+  height: 100%;
+}
+
+.total {
+  width: 200rpx;
+  margin-left: 20rpx;
+  font-size: 24rpx;
+  text-align: right;
+}
+
+.user-info{
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60rpx;
+  color: #555555;
+  font-size: 28rpx;
+}
+
+.school{
+  width: 40%;
+  text-align: right;
+  margin-right: 20rpx;
+  /*超出容器用省略号*/
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.faculty{
+  width: 40%;
+  text-align: left;
+  /*超出容器用省略号*/
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.file-detail {
+  background-color: white;
+  width: 100%;
+  height: 180rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.img-container {
+  height: 180rpx;
+  width: 180rpx;
+}
+
+.file-icon {
+  height: 180rpx;
+  width: 180rpx;
+}
+
+.namesize {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20rpx;
+}
+
+.name {
+  width: 560rpx;
+  font-size: 38rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.size {
+  width: 200rpx;
+  color: #AAAAAA;
+  margin-top: 10rpx;
+  margin-left: 10rpx;
+  font-size: 25rpx;
+}
+
+.file-add {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  color: #AAAAAA;
+  font-size: 25rpx;
+  height: 40rpx;
+  margin-bottom: 10rpx;
+}
+
+.time {
+  margin-left: 35rpx;
+  width: 150rpx;
+}
+
+.useful {
+  width: 150rpx;
+  text-align: right;
+  margin-left: 270rpx;
+}
+
+.download {
+  width: 150rpx;
+  text-align: left;
+  margin-left: 20rpx;
+}

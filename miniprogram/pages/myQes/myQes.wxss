@@ -1,0 +1,138 @@
+/* pages/myQes/myQes.wxss */
+.hover {
+  color: #000080;
+}
+
+.search {
+  background-color: white;
+  width: 80%;
+  margin: auto;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1rpx solid #D7D7D7;
+  border-radius: 10rpx;
+  margin-top: 20rpx;
+  padding-left: 20rpx;
+}
+
+.enter {
+  width: 520rpx;
+}
+
+image {
+  width: 45rpx;
+  height: 45rpx;
+}
+
+.search-icon {
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 20rpx;
+}
+
+.filter {
+  background-color: #A3D2CA;
+  border: 1rpx solid #D7D7D7;
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 30rpx;
+}
+
+.manage {
+  width: 120rpx;
+  font-size: 28rpx;
+  margin-left: 20rpx;
+}
+
+.total {
+  width: 200rpx;
+  margin-left: 250rpx;
+  font-size: 24rpx;
+  text-align: right;
+}
+
+.title {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60rpx;
+  color: #555555;
+  font-size: 28rpx;
+}
+
+.school {
+  width: 40%;
+  text-align: right;
+  margin-right: 20rpx;
+  /*超出容器用省略号*/
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.faculty {
+  width: 40%;
+  text-align: left;
+  /*超出容器用省略号*/
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.details {
+  background-color: white;
+  width: 100%;
+  height: 140rpx;
+  display: flex;
+  align-items: center;
+}
+
+.txt {
+  width: 94%;
+  height: 100rpx;
+  line-height: 50rpx;
+  font-size: 35rpx;
+  margin-left: 3%;
+  margin-right: 3%;
+  /*文本显示两行，超出容器用省略号表示*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.file-add {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  color: #AAAAAA;
+  font-size: 25rpx;
+  height: 40rpx;
+  margin-bottom: 10rpx;
+}
+
+.time {
+  margin-left: 35rpx;
+  width: 150rpx;
+}
+
+.useful {
+  width: 150rpx;
+  text-align: right;
+  margin-left: 270rpx;
+}
+
+.download {
+  width: 150rpx;
+  text-align: left;
+  margin-left: 20rpx;
+}

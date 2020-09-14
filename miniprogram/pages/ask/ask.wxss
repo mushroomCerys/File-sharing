@@ -1,0 +1,32 @@
+/* pages/ask/ask.wxss */
+.ask{
+  background-color: white;
+  height: 500rpx;
+  width: 85%;
+  margin: auto;
+  margin-top: 50rpx;
+  box-shadow: 5rpx 5rpx 20rpx  rgba(85, 85, 85, 0.10);
+  border-radius: 6rpx;
+}
+
+.input{
+  width: 90%;
+  height: 460rpx;
+  margin: auto;
+  margin-top: 20rpx;
+}
+
+.submit{
+  width: 85%;
+  height: 100rpx;
+  background-color: #A3D2CA;
+  border-radius: 0rpx;
+  margin-top: 50rpx;
+  font-size: 40rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 1rpx solid #D7D7D7;
+  border-radius: 6rpx;
+}

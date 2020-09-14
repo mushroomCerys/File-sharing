@@ -1,0 +1,5 @@
+<!--pages/ask/ask.wxml-->
+<view class="ask">
+	<textarea placeholder="问题描述..." class="input" bindinput="question" value="{{input}}"></textarea> 
+</view>
+<button class="submit" bindtap="qesSubmit">发布</button>
