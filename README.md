@@ -8,10 +8,10 @@
   
 项目效果截图：
   
-![one](https://github.com/mushroomCerys/File-sharing/Picture/1.jpg)
-![two](https://github.com/mushroomCerys/File-sharing/Picture/2.jpg)
-![three](https://github.com/mushroomCerys/File-sharing/Picture/3.jpg)
-![four](https://github.com/mushroomCerys/File-sharing/Picture/4.jpg)
-![five](https://github.com/mushroomCerys/File-sharing/Picture/5.jpg)  
+![one](https://github.com/mushroomCerys/File-sharing/blob/master/Picture/1.jpg)
+![two](https://github.com/mushroomCerys/File-sharing/blob/master/Picture/2.jpg)
+![three](https://github.com/mushroomCerys/File-sharing/blob/master/Picture/3.jpg)
+![four](https://github.com/mushroomCerys/File-sharing/blob/master/Picture/4.jpg)
+![five](https://github.com/mushroomCerys/File-sharing/blob/master/Picture/5.jpg)  
   
 **该小程序尚未正式发布**
